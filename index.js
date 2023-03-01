@@ -1,3 +1,4 @@
-var num1=34;
-var num2=56;
-console.log(num1 + num2);
+//Events in JS
+function clicked(){
+    console.log('the button was clicked')
+}
