@@ -31,11 +31,30 @@
 
     <div class="container">
         <h1>this is my heading</h1>
-        <p>
+        <p id="para">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quam deleniti inventore libero provident aliquam sapiente fugit accusantium assumenda a repudiandae totam recusandae, veniam placeat quis, fugiat soluta quas vero perspiciatis. Amet libero est esse necessitatibus quaerat consequatur at soluta sint laborum a culpa, adipisci labore fugit dolores deleniti molestiae sit delectus ut ducimus quis repudiandae ratione. Quia cupiditate in assumenda harum? Modi officia impedit ullam esse sapiente sunt, maxime exercitationem. Est consectetur illum porro asperiores maxime ea odit veritatis laudantium, sunt id, recusandae consequuntur exercitationem ipsa dolorem labore earum. Temporibus ullam molestias consectetur similique suscipit excepturi earum reprehenderit dignissimos accusantium minus ipsa veritatis itaque nisi, odio cum labore sapiente hic incidunt aspernatur saepe placeat facere. Distinctio odio in commodi enim, labore consequatur. At totam deserunt et aliquid. Iste ullam modi error quam quidem voluptatum consequatur. Et, eveniet. Veniam possimus recusandae eveniet ad sint, harum aspernatur vitae inventore voluptas expedita quo adipisci rerum eum eligendi quas temporibus rem maiores exercitationem iusto, cum odit ipsum consequatur. Molestiae officia saepe nulla excepturi debitis placeat laudantium cum natus reiciendis? Error nisi, amet nobis quasi qui aliquam? Sed quidem velit commodi nulla. Illum obcaecati vero ipsa omnis quis! Voluptates ex accusantium perspiciatis recusandae itaque quidem quam veniam corporis, ratione ab doloremque labore eius hic consequuntur, iusto provident exercitationem quis tempora. Quasi accusamus porro tempora quibusdam inventore minus aspernatur quod laboriosam. Hic obcaecati amet aut voluptas cum vero?
         </p>
     </div>
-    <button id="btn">Show/Hide</button>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            alert('mouse inside')
+        });
+            para.addEventListener('mouseout',function run(){
+            alert('mouse now went outside')
+        });
+        function toggleHide(){
+         let btn=document.getElementById('btn');
+         if(para.style.display!='none'){
+         para.style.display='none';
+        }
+        else{
+            para.style.display='block';
+        }
+    }
+        
+    </script>
 
 
 </body>
