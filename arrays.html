@@ -30,7 +30,7 @@
 
         // square of given array
 
-        let arr=[1,2,3,4]
+       // let arr=[1,2,3,4]
        /* let n=arr.map((x)=>
         {
             return x*x
@@ -43,11 +43,47 @@
         })
         console.log(n) */
 
-        let n=arr.reduce((x1,x2)=>
+       /* let n=arr.reduce((x1,x2)=>
         {
             return x1*x2
         })
-        console.log(n)
+        console.log(n)*/
+// Generate a random number between 1 and 100
+
+const randomNumber = Math.floor(Math.random() * 100) + 1;
+let score = 0;
+let guess = null;
+
+// Prompt the user to guess the number until they get it right
+while (guess !== randomNumber) {
+  guess = prompt("Guess a number between 1 and 100:");
+
+  // If the user cancels the prompt, exit the program
+  if (guess === null) {
+    break;
+  }
+
+  // Convert the user's guess to a number
+  guess = Number(guess);
+
+  // If the user's guess is not a valid number, prompt them again
+  if (isNaN(guess) || guess < 1 || guess > 100) {
+    alert("Please enter a valid number between 1 and 100.");
+    continue;
+  }
+
+  // Check if the user's guess is correct
+  if (guess === randomNumber) {
+    score++;
+    alert(`Congratulations! You guessed the number in ${score} tries.`);
+  } else if (guess < randomNumber) {
+    score++;
+    alert("Your guess is too low. Try again.");
+  } else {
+    score++;
+    alert("Your guess is too high. Try again.");
+  }
+}
             </script> 
     
 </body>
