@@ -5,9 +5,33 @@
 </head>
 <body>
     <script>
+//JS console objects
+        console.log("hii poo")
+        console.error("this is an error")
+        console.assert(5>53)
+        console.assert(3<5)
+        console.clear()
+        obj={a:1,b:2,c:3}
+        console.table(obj)
+        console.warn("hey dont do this")
+        console.info("hey this is an imp info")
+        console.time("a")
+        console.timeEnd("a")
 
-        console.log(console)
-        console.error(error)
+
+        console.time("forLoop")
+        for(let i=0;i<500;i++)
+        {
+
+        }
+        console.timeEnd("forLoop")
+
+        console.time("whileLoop")
+        let i=0;
+        while(i<500){
+            i++;
+        }
+        console.timeEnd("whileLoop")
     </script>
 </body>
 </html>
