@@ -22,7 +22,10 @@ let rectangle={
     {
         return rectangle={
             length:length,
-            breath:breadth
+            breadth:breadth, 
+            draw(){
+                console.log('drawing rectangle')
+            }
         };
     }
 let rectangle1=createRectangle(3,4);
