@@ -1,4 +1,6 @@
-function createRectangle(len,bre)
+// factory fucntion
+
+/*function createRectangle(len,bre)
 {
     return rectangle={
         length:len,
@@ -9,4 +11,17 @@ function createRectangle(len,bre)
         }
     };
 }
-let rectangleobj=createRectangle(5,9);
+let rectangleobj=createRectangle(5,9);*/
+
+//this function
+
+function Rectangle(len,bre)
+{
+    this.length=len;
+    this.breadth=bre;
+    this.draw=fucntion()
+    {
+        console.log('drawing');
+    }
+}
+let rectangleobject=new Rectangle(5,8);
