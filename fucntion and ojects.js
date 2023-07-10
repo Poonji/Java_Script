@@ -15,8 +15,8 @@ let rectangleobj=createRectangle(5,9);*/
 
 //this function
 
-function Rectangle(len,bre)
-{
+/*function Rectangle(len,bre)
+{ 
     this.length=len;
     this.breadth=bre;
     this.draw=fucntion()
@@ -24,4 +24,13 @@ function Rectangle(len,bre)
         console.log('drawing');
     }
 }
-let rectangleobject=new Rectangle(5,8);
+let rectangleobject=new Rectangle(5,8); */
+
+let rectangle={
+    length:2,
+    bredth:6
+};
+for(let key in rectangle)
+{
+    console.log(key,rectangle[key]);
+}
