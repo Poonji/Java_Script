@@ -116,4 +116,11 @@ console.log(myDate.getTime());
 console.log(myDate.getHours())
 console.log('hello world!');
 
+//template literal
+let message=
+`this is
+my message`;
+console.log(message);
+
+
 
