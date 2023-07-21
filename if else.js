@@ -1,4 +1,4 @@
-let age=prompt("enter your age")
+let age=prompt ("enter your age")
 age=Number.parseInt(age)
 if(age>=18)
 {
