@@ -2,7 +2,7 @@ let p1= new Promise((resolve,reject)=>{
     setTimeout(()=>{
         alert("I am a promise and i am resolved")
         resolve(true)
-    },10000)
+    },5000)
     })
 
     let p2 = new Promise((resolve,reject)=>{
